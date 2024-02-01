@@ -2,12 +2,12 @@
 
 ## Running the Application
 
-To run the application, ensure you have Node.js installed on your machine. Then follow these steps:
+To run the Spring Boot application using Gradle Wrapper, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Navigate to the project directory in your terminal.
-3. Install dependencies by running `npm install`.
-4. Start the application by running `npm start`.
+3. Build the application by running `./gradlew build`.
+4. Start the application by running `./gradlew bootRun`.
 5. The application will start and listen on port 8000 in development mode and port 9000 in production mode.
 
 Alternatively, you can run the application using Docker. Follow these steps:
