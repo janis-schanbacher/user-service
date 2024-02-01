@@ -34,6 +34,8 @@ dependencies {
 	runtimeOnly 'org.hsqldb:hsqldb'
 	implementation 'jakarta.persistence:jakarta.persistence-api'
 	implementation 'jakarta.validation:jakarta.validation-api'
+	
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
