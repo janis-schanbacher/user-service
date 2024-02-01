@@ -1,5 +1,7 @@
 # User Service
 
+Spring Boot 3 application to manage User data with JPA, CRUD Controller and HSQLDB.
+
 ## Running the Application
 
 To run the Spring Boot application using Gradle Wrapper, follow these steps:
