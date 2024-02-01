@@ -39,4 +39,22 @@ public class UserTest {
         assertEquals("John", user.getFirstName());
         assertEquals("john.doe@example.com", user.getEmail());
     }
+
+    @Test
+    public void testEqualsAndHashCode() {
+        User user1 = new User(Long.valueOf(1), "John Doe", "John", "john.doe@example.com");
+        User user2 = new User(Long.valueOf(1), "John Doe", "John", "john.doe@example.com");
+
+        assertEquals(user1, user2);
+        assertEquals(user1.hashCode(), user2.hashCode());
+    }
+
+    @Test
+    public void testNotEqualsAndHashCode() {
+        User user1 = new User(Long.valueOf(1), "John Doe", "John", "john.doe@example.com");
+        User user2 = new User(Long.valueOf(2), "Jane Smith", "Jane", "jane.smith@example.com");
+
+        assertNotEquals(user1, user2);
+        assertNotEquals(user1.hashCode(), user2.hashCode());
+    }
 }
